@@ -9,3 +9,4 @@ apachepulsar/pulsar:4.0.0
 apache/rocketmq:5.3.1
 bitnami/kafka:latest
 lfedge/ekuiper:2.1.0
+emqx/ekuiper-manager:latest
