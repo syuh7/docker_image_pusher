@@ -1,14 +1,30 @@
-nginx
-#支持私库
-k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
-xhofe/alist:latest
-#支持指定架构
---platform=linux/arm64 xiaoyaliu/alist
-rabbitmq:latest
-apachepulsar/pulsar:4.0.0
-apache/rocketmq:5.3.1
-bitnami/kafka:latest
-lfedge/ekuiper:2.1.0
-emqx/ekuiper-manager:latest
+# MySQL
 --platform=linux/amd64 mysql:8.4.13
 --platform=linux/arm64/v8 mysql:8.4.13
+# Pulsar
+--platform=linux/amd64 apachepulsar/pulsar:5.0.1
+--platform=linux/arm64 apachepulsar/pulsar:5.0.1
+# RocketMQ
+--platform=linux/amd64 apache/rocketmq:5.3.4
+--platform=linux/arm64 apache/rocketmq:5.3.4
+# RabbitMQ
+--platform=linux/amd64 rabbitmq:4.2.9-management
+--platform=linux/arm64/v8 rabbitmq:4.2.9-management
+# Kafka
+--platform=linux/amd64 apache/kafka:4.4.0
+--platform=linux/arm64 apache/kafka:4.4.0
+# PostgreSQL
+--platform=linux/amd64 postgres:17.12-bookworm
+--platform=linux/arm64/v8 postgres:17.12-bookworm
+--platform=linux/amd64 postgres:18.7-bookworm
+--platform=linux/arm64/v8 postgres:18.7-bookworm
+# Redis
+--platform=linux/amd64 redis:7.2.17-alpine3.22
+--platform=linux/arm64/v8 redis:7.2.17-alpine3.22
+--platform=linux/amd64 redis:8.2-alpine3.22
+--platform=linux/arm64/v8 redis:8.2-alpine3.22
+# Nginx
+--platform=linux/amd64 nginx:1.30-alpine3.24
+--platform=linux/arm64/v8 nginx:1.30-alpine3.24
+--platform=linux/amd64 nginx:1.30-trixie
+--platform=linux/arm64/v8 nginx:1.30-trixie
