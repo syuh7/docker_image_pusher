@@ -10,3 +10,4 @@ apache/rocketmq:5.3.1
 bitnami/kafka:latest
 lfedge/ekuiper:2.1.0
 emqx/ekuiper-manager:latest
+mysql:8.4.13 --platform=linux/amd64,linux/arm64/v8
